@@ -1,0 +1,77 @@
+#container{
+    color: black;
+    background-color: aliceblue;
+}
+
+#container h1{
+    text-align: center;
+}
+
+#authorSpan{
+    text-align: left;
+    display: inline;
+}
+
+#Editbtn{
+    position: relative;
+    text-align: right;
+    float: right;
+    background-color: rgb(232, 71, 71);
+    color: white;
+    padding: 10px;
+}
+
+#actualContent{
+    text-align: justify;
+    margin: 30px;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#likeBtn{
+    background-color: rgb(232, 71, 71);
+    color: white;
+    padding: 10px;
+}
+
+#container textarea{
+    position: relative;
+    width: 99%;
+    height: 50px;
+    resize: none;
+}
+
+#commentBtn{
+    background-color: rgb(232, 71, 71);
+    color: white;
+    padding: 10px;
+}
+
+#commentBox{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-between;
+}
+
+.comment{
+    background-color: beige;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#savebtn{
+    position: relative;
+    text-align: right;
+    float: right;
+    background-color: rgb(232, 71, 71);
+    color: white;
+    padding: 10px;
+}
+
+#Likes{
+    display: inline;
+    margin: 0px;
+}
+

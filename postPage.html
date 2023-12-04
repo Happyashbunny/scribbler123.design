@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Post Details</title>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="C:\Users\ashis\OneDrive\Desktop\scribbler123.design\common.css">
+        <link rel="stylesheet" type="text/css" href="C:\Users\ashis\OneDrive\Desktop\scribbler123.design\postPage.css">
+    </head>
+
+    <body>
+        <div class = "header">
+            <a id="pageTitle" class="logo-title" href="file:///C:/Users/ashis/OneDrive/Desktop/scribbler123.design/index.html">Scribbler</a>
+            <p class="middleText">Explore, Imagine, Create</p>
+        </div>
+        <div id="container">
+            <h1 id="mainHeading">Sample Heading</h1>
+            <h2 id="authorSpan">Shrishti Gupta</h2>
+            <button id="Editbtn" onclick="editBtnHandler()">Edit &#9776;</button>
+            <p id="actualContent">In November 1996, Netscape submitted JavaScript to Ecma International, as the starting point for a standard specification that all browser vendors could conform to. This led to the official release of the first ECMAScript language specification in June 1997.
+
+                The standards process continued for a few years, with the release of ECMAScript 2 in June 1998 and ECMAScript 3 in December 1999. Work on ECMAScript 4 began in 2000.[16]
+                
+                Meanwhile, Microsoft gained an increasingly dominant position in the browser market. By the early 2000s, Internet Explorer's market share reached 95%.[20] This meant that JScript became the de facto standard for client-side scripting on the Web.
+                
+                Microsoft initially participated in the standards process and implemented some proposals in its JScript language, but eventually it stopped collaborating on Ecma work. Thus ECMAScript 4 was mothballed.</p>
+            <button id="likeBtn" onclick="likeBtnHandler()">Like</button><br>
+            <p id="Likes">1 person likes this!</p><br><br>
+            <textarea id="textArea"></textarea>
+            <button id="commentBtn" onclick="commentBtnHandler()">Comment</button>
+            <h3>All Comments</h3>
+            <div id="commentBox">
+                <div class="comment">
+                    1st Comment
+                </div>
+                <div class="comment">
+                    2nd Comment
+                </div>
+                <div class="comment">
+                    3rd Comment
+                </div>
+            </div> 
+        </div>
+        
+
+        <script src="C:\Users\ashis\OneDrive\Desktop\scribbler123.design\postPage.js"></script>
+    </body>
+</html>

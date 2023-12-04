@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="C:\Users\ashis\OneDrive\Desktop\scribbler123.design\common.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\ashis\OneDrive\Desktop\scribbler123.design\index.css">    
+    <!-- TODO: Include Font Awesome file here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <!-- TODO: Include Google Fonts file here -->
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div class = "header">
+        <input id="Signup" class="topButtons" type="button" value="Sign Up" onclick="showSignUp()">
+        <input id="Signin" class="topButtons" type="button" value="Sign In" onclick="showSignIn()">
+        <a id="pageTitle" class="logo-title">Scribbler</a>
+        <p class="middleText">Explore, Imagine, Create</p>
+    </div>
+
+    <div class = "mainButtons">
+        <input class='impButtons' type="button" value="All Posts" onclick="location.href = 'file:///C:/Users/ashis/OneDrive/Desktop/FSD/Scribbler%20Project/Course+6+Project+Stub+-+Scribbler/html/postList.html'" >
+        <input class='impButtons' type="button" value="Create Post" onclick="showCreatePostModal()">
+    </div>
+
+
+    <div id="modal" class="myModal">
+        <h1>You're what we were looking for!</h1>
+        <span onclick = "onCancel('modal')">&times;</span>
+        <form>
+        <label>Name</label><br>
+        <input type="text" placeholder="Enter your name"/><br>
+        <label>Username</label><br>
+        <input type="text" placeholder="Enter your username"/><br>
+        <label>Password</label><br>
+        <input type="password" placeholder="Enter your Password"/><br>
+        <label>Confirm Password</label><br>
+        <input type="password" placeholder="Re-enter your Password"/><br>
+        <button>Let's Go!</button>
+        </form>
+    </div>
+
+    <div id="modal2" class="myModal">
+        <h1>Good to have you back!</h1>
+        <span onclick="onCancel('modal2')">&times;</span>
+        <form>
+            <label>Username</label>
+            <input type="text" placeholder="Enter your username"/>
+            <label>Password</label>
+            <input type="password" placeholder="You do remember your password, right?"/>
+            <button>Let's Go!</button>
+        </form>
+        
+        <p>Not a member? Close this and &nbsp; <button onclick="showSignUp2('modal2')">Sign Up</button></p>
+    </div>
+
+    <div id="CreatePostModal" class="myModal">
+        <h1>Go ahead! Create.</h1>
+        <form>
+            <label>What do you wanna call your post?</label>
+            <input type="text" placeholder = "Please be imaginative!"/>
+            <label>Now, write the content of your post here.</label><br>
+            <textarea id="contentHolder"></textarea>
+            <button>Create!</button>
+        </form>
+    </div>    
+    
+    <script src="C:\Users\ashis\OneDrive\Desktop\scribbler123.design\index.js"></script>
+</body>
+
+</html>
